@@ -1,0 +1,65 @@
+from pydantic import BaseModel
+from models.Thing import Thing
+
+from typing import Optional, Any
+
+class Person(Thing):
+    additionalName: Optional[Any] = None
+    address: Optional[Any] = None
+    affiliation: Optional[Any] = None
+    alumniOf: Optional[Any] = None
+    award: Optional[Any] = None
+    birthDate: Optional[Any] = None
+    birthPlace: Optional[Any] = None
+    brand: Optional[Any] = None
+    callSign: Optional[Any] = None
+    children: Optional[Any] = None
+    colleague: Optional[Any] = None
+    contactPoint: Optional[Any] = None
+    deathDate: Optional[Any] = None
+    deathPlace: Optional[Any] = None
+    duns: Optional[Any] = None
+    email: Optional[Any] = None
+    familyName: Optional[Any] = None
+    faxNumber: Optional[Any] = None
+    follows: Optional[Any] = None
+    funder: Optional[Any] = None
+    funding: Optional[Any] = None
+    gender: Optional[Any] = None
+    givenName: Optional[Any] = None
+    globalLocationNumber: Optional[Any] = None
+    hasCredential: Optional[Any] = None
+    hasOccupation: Optional[Any] = None
+    hasOfferCatalog: Optional[Any] = None
+    hasPOS: Optional[Any] = None
+    height: Optional[Any] = None
+    homeLocation: Optional[Any] = None
+    honorificPrefix: Optional[Any] = None
+    honorificSuffix: Optional[Any] = None
+    interactionStatistic: Optional[Any] = None
+    isicV4: Optional[Any] = None
+    jobTitle: Optional[Any] = None
+    knows: Optional[Any] = None
+    knowsAbout: Optional[Any] = None
+    knowsLanguage: Optional[Any] = None
+    makesOffer: Optional[Any] = None
+    memberOf: Optional[Any] = None
+    naics: Optional[Any] = None
+    nationality: Optional[Any] = None
+    netWorth: Optional[Any] = None
+    owns: Optional[Any] = None
+    parent: Optional[Any] = None
+    performerIn: Optional[Any] = None
+    publishingPrinciples: Optional[Any] = None
+    relatedTo: Optional[Any] = None
+    seeks: Optional[Any] = None
+    sibling: Optional[Any] = None
+    sponsor: Optional[Any] = None
+    spouse: Optional[Any] = None
+    taxID: Optional[Any] = None
+    telephone: Optional[Any] = None
+    vatID: Optional[Any] = None
+    weight: Optional[Any] = None
+    workLocation: Optional[Any] = None
+    worksFor: Optional[Any] = None
+
