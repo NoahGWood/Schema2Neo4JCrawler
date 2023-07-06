@@ -11,5 +11,5 @@ class HowTo(CreativeWork):
     supply: Optional[Any] = None
     tool: Optional[Any] = None
     totalTime: Optional[Any] = None
-    yield: Optional[Any] = None
+    _yield: Optional[Any] = None
 
