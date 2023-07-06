@@ -116,9 +116,11 @@ import importlib
 
 # Custom import function to dynamically load classes
 def load_class(class_name):
-    module_name, _, class_name = class_name.rpartition(".")
-    module = importlib.import_module(module_name)
-    return getattr(module, class_name)
+    m = globals().get(class_name.split(".")[-1])
+    if m is None:
+        module = importlib.import_module(class_name)
+        m = getattr(module, class_name.split(".")[-1])
+    return m
 """ + "\n\nMAP = {" + map + "}\n"
 
 with open(f"full_map.py", "w") as f:

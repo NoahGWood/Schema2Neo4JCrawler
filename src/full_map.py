@@ -10,6 +10,7 @@ def load_class(class_name):
         m = getattr(module, class_name.split(".")[-1])
     return m
 
+
 MAP = {    'AMRadioChannel': 'models.AMRadioChannel',
     'APIReference': 'models.APIReference',
     'AboutPage': 'models.AboutPage',
